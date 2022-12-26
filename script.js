@@ -10,12 +10,13 @@ for(let x = 0; x < 256; x++) {
 //color <div>s blue upon mouseover
 const gridSquares = document.querySelectorAll('.gridSquare');
 gridSquares.forEach(gridSquare => {
-    gridSquare.addEventListener('mouseover', function() {
+    gridSquare.addEventListener('mouseover', () => {
         gridSquare.style.backgroundColor = 'blue';
     })
 })
 
-
+const newGridBtn = document.querySelector('#newGridBtn');
+    newGridBtn.addEventListener('click', )
 
 
 
