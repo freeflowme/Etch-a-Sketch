@@ -1,4 +1,4 @@
-//create 256 <div>s for 16x16 grid
+//create 256 <div>s for original 16x16 grid
 const container = document.querySelector('#container');
 let x
 for(let x = 0; x < 256; x++) {
@@ -16,7 +16,9 @@ gridSquares.forEach(gridSquare => {
 })
 
 const newGridBtn = document.querySelector('#newGridBtn');
-    newGridBtn.addEventListener('click', )
+    newGridBtn.addEventListener('click', () => {
+        const userChoice = prompt("Squres per side in new grid:");
+    })
 
 
 
