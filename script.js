@@ -9,13 +9,12 @@ for(let x = 0; x < 256; x++) {
 
 //color <div>s blue upon mouseover
 const gridSquares = document.querySelectorAll('.gridSquare');
-/*
 gridSquares.forEach(gridSquare => {
     gridSquare.addEventListener('mouseover', () => {
         gridSquare.style.backgroundColor = 'blue';
     })
 })
-*/
+
 //upon button click, prompt user input for new grid size, remove old grid, replace with new
 const newGridBtn = document.querySelector('#newGridBtn');
     newGridBtn.addEventListener('click', () => {
@@ -57,7 +56,9 @@ function randomColor() {
     gridSquare.style.backgroundColor = color;
 }
 
+
 //add 10% black gradient to <div>s upon mouseover
+/*
 gridSquares.forEach(gridSquare => {
     gridSquare.addEventListener('mouseover', (event) => {
         const currentBackground = window.getComputedStyle(event.target).
@@ -68,3 +69,4 @@ gridSquares.forEach(gridSquare => {
         event.target.style.backgroundColor = `rgba(${red}, ${green}, ${blue}, ${alpha+0.1})`;
     })
 })
+*/
